@@ -5,6 +5,16 @@
 <div class="container">
     <h1>Projects</h1>
 
+    <div class="px-5">
+        @if(session('message'))
+        <div class="alert alert-success p-4">
+            <strong class="fs-4">
+                {{ session('message') }}
+            </strong>
+        </div>
+        @endif
+    </div>
+
     <a href="{{ route('admin.projects.create') }}" class="btn btn-warning fw-bold my-2">+ Add Project</a>
     
     <div class="table-responsive">
