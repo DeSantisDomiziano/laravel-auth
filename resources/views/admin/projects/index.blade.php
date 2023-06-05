@@ -5,6 +5,8 @@
 <div class="container">
     <h1>Projects</h1>
 
+    <a href="{{ route('admin.projects.create') }}" class="btn btn-warning fw-bold my-2">+ Add Project</a>
+    
     <div class="table-responsive">
         <table class="table table-striped
         table-hover
