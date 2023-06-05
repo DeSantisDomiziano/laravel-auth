@@ -51,6 +51,8 @@
         @enderror
     </div>
 
+    <button type="submit" class="btn btn-success w-100 fw-bold fs-5">C R E A T E</button>
+
 </form>
 
 @endsection
