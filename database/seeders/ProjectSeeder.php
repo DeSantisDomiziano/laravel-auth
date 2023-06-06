@@ -25,7 +25,7 @@ class ProjectSeeder extends Seeder
             $newProject->img_path = $faker->imageUrl;
             $newProject->programming_language = $faker->word();
             $newProject->link_code = $faker->word();
-            $newProject->link_websie = $faker->word();
+            $newProject->link_website = $faker->word();
             $newProject->overview = $faker->text(); 
             $newProject->save();
         }

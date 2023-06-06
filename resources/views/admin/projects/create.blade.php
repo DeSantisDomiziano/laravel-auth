@@ -41,6 +41,28 @@
     </div>
 
     <div class="mb-3">
+        <label for="link_code" class="form-label fw-bold">Link Code</label>
+        <input type="text" name="link_code" id="link_code" placeholder="" aria-describedby="helpId"
+        class="form-control form-control @error('link_code') is-invalid @enderror"
+        value="{{ old('link_code') }}" required>
+        <small id="helpId" class="text-muted">Add Link Code</small>
+        @error('link_code')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
+    </div>
+
+    <div class="mb-3">
+        <label for="link_website" class="form-label fw-bold">Link Website</label>
+        <input type="text" name="link_website" id="link_website" placeholder="" aria-describedby="helpId"
+        class="form-control form-control @error('link_website') is-invalid @enderror"
+        value="{{ old('link_website') }}" required>
+        <small id="helpId" class="text-muted">Add Link Website</small>
+        @error('link_website')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
+    </div>
+
+    <div class="mb-3">
       <label for="overview" class="form-label fw-bold">Overview</label>
       <textarea class="form-control @error('overview') is-invalid @enderror" name="overview" id="overview" rows="3">
         {{ old('overview') }}

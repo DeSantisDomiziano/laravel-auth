@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('img_path');
             $table->string('programming_language');
             $table->string('link_code');
-            $table->string('link_websie');
+            $table->string('link_website');
             $table->text('overview')->nullable();
             $table->timestamps();
         });
