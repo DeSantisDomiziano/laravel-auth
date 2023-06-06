@@ -48,29 +48,16 @@
                         <ul class="nav flex-column">
                             <li class="nav-item">
                                 <a class="nav-link {{Route::currentRouteName() == 'admin.dashboard' ? 'bg-dark text-white' : ''}}" aria-current="page" href="{{route('admin.dashboard')}}">
-                                    <i class="fa-solid fa-gauge"></i>
+                                    <i class="fa-solid fa-user-shield"></i>
                                     {{__('Dashboard')}}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{Route::currentRouteName() == 'admin.projects.index' ? 'bg-dark text-white' : ''}}" href="{{route('admin.projects.index')}}">
-                                    <i class="fa-solid fa-thumbtack"></i>
+                                    <i class="fa-sharp fa-solid fa-laptop-code"></i>
                                     {{__('Project')}}
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">
-                                    <i class="fa-solid fa-bookmark"></i>
-                                    Categories
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">
-                                    <i class="fa-solid fa-tags"></i>
-                                    Tags
-                                </a>
-                            </li>
-
                         </ul>
                     </div>
                 </nav>

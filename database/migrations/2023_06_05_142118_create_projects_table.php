@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('slug');
             $table->string('img_path');
             $table->string('programming_language');
+            $table->string('link_code');
+            $table->string('link_websie');
             $table->text('overview')->nullable();
             $table->timestamps();
         });
