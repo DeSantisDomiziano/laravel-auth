@@ -44,8 +44,11 @@
                     <td>{{$project->title}}</td>
                     <td>{{$project->slug}}</td>
                     <td>
+                        <a href="{{ route('admin.projects.show', $project->id ) }}">
+                            VIEW 
+                        </a>
     
-                        VIEW | EDIT | DELETE
+                        | EDIT | DELETE
     
                     </td>
     
